@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap-5.3.7-dist/bootstrap-5.3.7-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="login.css">
-    <header>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <header>
     <h1>MWF Dashboard</h1>
     <nav>
       <a href="index.html">Dashboard</a>
       <a href="inventory.html">Inventory</a>
       <a href="sales.html">Sales</a>
+      <a href="customers.html">Customers</a>
       <a href="reports.html">Reports</a>
         
     </nav>
-  </header>
+  </header> -->
 </head>
 <body>
     <!-- Section: Design Block -->
@@ -28,6 +29,9 @@
     @media (max-width: 991.98px) {
       .cascading-right {
         margin-right: 0;
+      }
+      selector{
+        property:!important;
       }
     }
   </style>
@@ -46,13 +50,13 @@
               <div class="row">
                 <div class="col-md-6 mb-4">
                   <div data-mdb-input-init class="form-outline">
-                    <input type="text" id="form3Example1" class="form-control" />
+                    <input type="text" id="form3Example1" class="form-control" required/>
                     <label class="form-label" for="form3Example1">First name</label>
                   </div>
                 </div>
                 <div class="col-md-6 mb-4">
                   <div data-mdb-input-init class="form-outline">
-                    <input type="text" id="form3Example2" class="form-control" />
+                    <input type="text" id="form3Example2" class="form-control" required />
                     <label class="form-label" for="form3Example2">Last name</label>
                   </div>
                 </div>
@@ -60,13 +64,13 @@
 
               <!-- Email input -->
               <div data-mdb-input-init class="form-outline mb-4">
-                <input type="email" id="form3Example3" class="form-control" />
+                <input type="email" id="form3Example3" class="form-control" required />
                 <label class="form-label" for="form3Example3">Email address</label>
               </div>
 
               <!-- Password input -->
               <div data-mdb-input-init class="form-outline mb-4">
-                <input type="password" id="form3Example4" class="form-control" />
+                <input type="password" id="form3Example4" class="form-control"/>
                 <label class="form-label" for="form3Example4">Password</label>
               </div>
 
@@ -78,14 +82,13 @@
                 </label>
               </div>
 
-              <!-- Submit button -->
+              
               <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">
                 Sign in
               </button>
 
-              <!-- Register buttons -->
+              
               <div class="text-center">
-                <p>or sign up with:</p>
                 <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
                   <i class="fab fa-facebook-f"></i>
                 </button>
